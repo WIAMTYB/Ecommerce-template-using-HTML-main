@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="src/logo.jpg" alt="Logo" class="logo"></a>
+            <ul class="desktop-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="cart">Cart (0)</a></li>
+            </ul>
+            <span class="hamburger-menu"><i class="fas fa-bars"></i></span>
+            <ul class="mobile-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="cart">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to ShopEasy</h1>
+            <p>Your one-stop shop for all your needs!</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="products" id="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <!-- Product Items will be injected here by JavaScript -->
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>ShopEasy is your go-to e-commerce platform for a seamless shopping experience. We offer a wide variety of products to meet all your needs, from electronics to fashion, and everything in between. Our mission is to provide high-quality products at competitive prices, ensuring customer satisfaction through excellent service and support. We are dedicated to making your shopping journey as easy and enjoyable as possible. Join us and discover a better way to shop!</p>
+        </section>
+    </main>
+    
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <img src="https://via.placeholder.com/150" alt="Store Logo" class="store-logo">
+            <p><strong>Name of the Store:</strong> My Online Store</p>
+            <p><strong>Email:</strong> contact@myonlinestore.com</p>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+            <p><strong>Payment Method:</strong> Cash on Delivery</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/YourPage" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/YourProfile" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+212649455082" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <div class="cart">
+        <button class="close-cart" onclick="closeCart()">X</button>
+        <h2>Shopping Cart</h2>
+        <div class="cart-items"></div>
+        <p class="total-price">Total: $0.00</p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
